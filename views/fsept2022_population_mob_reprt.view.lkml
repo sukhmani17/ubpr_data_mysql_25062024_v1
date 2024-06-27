@@ -46,6 +46,7 @@ view: fsept2022_population_mob_reprt {
     datatype: date
     type: string
     sql: ${TABLE}.date ;;
+    #drill_fields: mon
   }
 
   dimension: grocery_and_pharmacy_percent_change_from_baseline {

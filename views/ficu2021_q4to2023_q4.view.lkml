@@ -140,6 +140,7 @@ view: ficu2021_q4to2023_q4 {
 
   dimension: year_and_quarter {
     type: string
+    value_format_name: id
     sql: ${TABLE}.year_and_quarter ;;
   }
 
@@ -153,31 +154,39 @@ view: ficu2021_q4to2023_q4 {
   }
 
   measure: Assets_avg{
+    label: "Total Assets"
+    value_format_name: usd_0
     type: average
     sql: ${total_assets} ;;
   }
 
   measure: Total_loans_2 {
+    label: "Total Loans"
     type: average
     sql: ${total_loans} ;;
   }
 
   measure: net_worth_ratio2 {
+    label: "Net Worth Ratio"
     type: average
     sql: ${net_worth_ratio};;
   }
   measure: loan_to_share_ratio_2 {
+    label: "Loan to Share Ratio"
     type: average
     sql: ${loan_to_share_ratio} ;;
   }
 
   measure: members2 {
+    label: "Members"
     type: average
     sql: ${members} ;;
 
   }
 
   measure: deposits2 {
+    label: "Total Deposits"
+    value_format_name: usd_0
     type: average
     sql: ${total_deposits} ;;
   }

@@ -381,6 +381,7 @@ view: sod_2021_2022_2023 {
 
   dimension: stnamebr {
     map_layer_name: us_states
+    label: " Branch State"
     type: string
     sql: ${TABLE}.stnamebr ;;
   }
